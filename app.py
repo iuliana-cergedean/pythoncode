@@ -15,19 +15,10 @@ def home():
     return render_template('home.html')
 
 def rest_request_example():
-    links = ["http://129.157.179.180:3000/fighters/45/y0/Red/mariaApp", 
-		"http://129.157.179.180:3000/fighters/45/y1/Red/mariaApp",
-		"http://129.157.179.180:3000/fighters/45/y2/Red/mariaApp",
-		"http://129.157.179.180:3000/fighters/45/y3/Red/mariaApp",
-		"http://129.157.179.180:3000/fighters/45/y4/Red/mariaApp",
-		"http://129.157.179.180:3000/fighters/45/y5/Red/mariaApp",
-		"http://129.157.179.180:3000/fighters/45/y6/Red/mariaApp",
-		"http://129.157.179.180:3000/fighters/45/y7/Red/mariaApp",
-		"http://129.157.179.180:3000/fighters/45/y8/Red/mariaApp",
-		"http://129.157.179.180:3000/fighters/45/y9/Red/mariaApp"]
-	for url in links:
-    	    page = requests.get(url)
-    	    print(page.text)
+    links = ["http://129.157.179.180:3000/fighters/45/y0/Red/mariaApp", "http://129.157.179.180:3000/fighters/45/y1/Red/mariaApp", "http://129.157.179.180:3000/fighters/45/y2/Red/mariaApp", "http://129.157.179.180:3000/fighters/45/y3/Red/mariaApp", "http://129.157.179.180:3000/fighters/45/y4/Red/mariaApp", "http://129.157.179.180:3000/fighters/45/y5/Red/mariaApp", "http://129.157.179.180:3000/fighters/45/y6/Red/mariaApp", "http://129.157.179.180:3000/fighters/45/y7/Red/mariaApp", "http://129.157.179.180:3000/fighters/45/y8/Red/mariaApp", "http://129.157.179.180:3000/fighters/45/y9/Red/mariaApp"]
+    for url in links:
+    	page = requests.get(url)
+    	print(page.text)
 
 def read_db_SQL_example():
     conn = db.get_engine().connect()
