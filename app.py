@@ -15,7 +15,7 @@ def home():
     return render_template('home.html')
 
 def rest_request_example():
-	links = ["http://129.157.179.180:3000/fighters/45/0/Red/mariaApp", "http://129.157.179.180:3000/fighters/45/1/Red/mariaApp", "http://129.157.179.180:3000/fighters/45/2/Red/mariaApp", "http://129.157.179.180:3000/fighters/45/3/Red/mariaApp", "http://129.157.179.180:3000/fighters/45/4/Red/mariaApp", "http://129.157.179.180:3000/fighters/45/5/Red/mariaApp", "http://129.157.179.180:3000/fighters/45/6/Red/mariaApp", "http://129.157.179.180:3000/fighters/45/7/Red/mariaApp", "http://129.157.179.180:3000/fighters/45/8/Red/mariaApp", "http://129.157.179.180:3000/fighters/45/9/Red/mariaApp"]
+	links = ["http://129.157.179.180:3000/fighters/45/0/red/mariaApp", "http://129.157.179.180:3000/fighters/45/1/red/mariaApp", "http://129.157.179.180:3000/fighters/45/2/red/mariaApp", "http://129.157.179.180:3000/fighters/45/3/red/mariaApp", "http://129.157.179.180:3000/fighters/45/4/red/mariaApp", "http://129.157.179.180:3000/fighters/45/5/red/mariaApp", "http://129.157.179.180:3000/fighters/45/6/red/mariaApp", "http://129.157.179.180:3000/fighters/45/7/red/mariaApp", "http://129.157.179.180:3000/fighters/45/8/red/mariaApp", "http://129.157.179.180:3000/fighters/45/9/red/mariaApp"]
 	for url in links:
 		page = requests.get(url)
 		print(page.text)
