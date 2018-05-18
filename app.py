@@ -17,8 +17,7 @@ def home():
 def rest_request_example():
 	links = ["http://129.157.179.180:3000/fighters/45/0/Red/mariaApp", "http://129.157.179.180:3000/fighters/45/1/Red/mariaApp", "http://129.157.179.180:3000/fighters/45/2/Red/mariaApp", "http://129.157.179.180:3000/fighters/45/3/Red/mariaApp", "http://129.157.179.180:3000/fighters/45/4/Red/mariaApp", "http://129.157.179.180:3000/fighters/45/5/Red/mariaApp", "http://129.157.179.180:3000/fighters/45/6/Red/mariaApp", "http://129.157.179.180:3000/fighters/45/7/Red/mariaApp", "http://129.157.179.180:3000/fighters/45/8/Red/mariaApp", "http://129.157.179.180:3000/fighters/45/9/Red/mariaApp"]
 	for url in links:
-		page = requests.get(url)
-	print(page.text)
+		print(requests.get(url).text)
 
 def read_db_SQL_example():
     conn = db.get_engine().connect()
